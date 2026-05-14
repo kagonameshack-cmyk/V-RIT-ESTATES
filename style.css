@@ -1,0 +1,167 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0A0A0A;
+
+    color:#F5F1E8;
+
+    font-family:'Inter',sans-serif;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+
+    height:100vh;
+
+    background:url('images/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    overflow:hidden;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.82)
+    );
+}
+
+/* HEADER */
+
+header{
+    position:relative;
+    z-index:10;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:35px 7%;
+}
+
+.logo{
+    color:#F5F1E8;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.5rem;
+
+    letter-spacing:3px;
+}
+
+nav{
+    display:flex;
+
+    gap:45px;
+}
+
+nav a{
+    color:#E0E0E0;
+
+    text-decoration:none;
+
+    font-size:0.95rem;
+
+    letter-spacing:1px;
+
+    transition:0.4s ease;
+}
+
+nav a:hover{
+    color:#B89B72;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:relative;
+    z-index:5;
+
+    height:85vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:0 7%;
+
+    max-width:950px;
+}
+
+.hero-content p{
+    color:#B89B72;
+
+    letter-spacing:5px;
+
+    margin-bottom:28px;
+
+    font-size:0.9rem;
+}
+
+.hero-content h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:6.5rem;
+    font-weight:300;
+
+    line-height:1.02;
+
+    margin-bottom:35px;
+}
+
+.hero-content span{
+    color:#CFCFCF;
+
+    line-height:2;
+
+    max-width:650px;
+
+    margin-bottom:50px;
+}
+
+/* BUTTON */
+
+.hero-content a{
+    width:fit-content;
+
+    padding:18px 40px;
+
+    border:
+    1px solid rgba(255,255,255,0.2);
+
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    transition:0.5s ease;
+
+    backdrop-filter:blur(10px);
+}
+
+.hero-content a:hover{
+    background:#B89B72;
+
+    color:#0A0A0A;
+
+    border-color:#B89B72;
+}
