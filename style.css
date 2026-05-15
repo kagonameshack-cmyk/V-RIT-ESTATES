@@ -714,3 +714,165 @@ nav a:hover{
     }
 
         }
+
+/* CONSULTATION */
+
+.consultation{
+    padding:160px 7%;
+
+    background:#0A0A0A;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:100px;
+}
+
+/* LEFT */
+
+.consultation-left p{
+    color:#B89B72;
+
+    letter-spacing:5px;
+
+    font-size:0.85rem;
+
+    margin-bottom:25px;
+}
+
+.consultation-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1.05;
+
+    margin-bottom:35px;
+}
+
+.consultation-left span{
+    color:#D0D0D0;
+
+    line-height:2;
+
+    max-width:520px;
+}
+
+/* FORM */
+
+.consultation-form{
+    display:flex;
+    flex-direction:column;
+
+    gap:30px;
+}
+
+/* INPUT */
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+
+    background:transparent;
+
+    border:none;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.12);
+
+    padding:22px 0;
+
+    color:#F5F1E8;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:0.4s ease;
+}
+
+/* TEXTAREA */
+
+.input-group textarea{
+    min-height:150px;
+
+    resize:none;
+}
+
+/* PLACEHOLDER */
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+    color:#8A8A8A;
+
+    letter-spacing:1px;
+}
+
+/* FOCUS */
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#B89B72;
+}
+
+/* BUTTON */
+
+.consultation-form button{
+    width:fit-content;
+
+    padding:18px 42px;
+
+    background:transparent;
+
+    border:
+    1px solid rgba(255,255,255,0.15);
+
+    color:#F5F1E8;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:0.5s ease;
+}
+
+.consultation-form button:hover{
+    background:#B89B72;
+
+    color:#0A0A0A;
+
+    border-color:#B89B72;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .consultation{
+        grid-template-columns:1fr;
+
+        gap:70px;
+    }
+
+    .consultation-left h2{
+        font-size:4rem;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .consultation{
+        padding:120px 7%;
+    }
+
+    .consultation-left h2{
+        font-size:3rem;
+    }
+
+}
