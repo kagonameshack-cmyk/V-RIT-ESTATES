@@ -71,55 +71,51 @@ body{
 /* HEADER */
 
 header{
+    width:92%;
+
     position:fixed;
 
-    top:18px;
+    top:22px;
     left:50%;
 
     transform:translateX(-50%);
 
-    width:92%;
+    padding:24px 42px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
     z-index:1000;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    padding:22px 35px;
-
-    background:
-    rgba(15,15,15,0.28);
-
-    backdrop-filter:blur(18px);
+    transition:0.45s ease;
 
     border:
-    1px solid rgba(255,255,255,0.08);
+    1px solid rgba(255,255,255,0.04);
 
-    border-radius:18px;
+    border-radius:100px;
 
-    transition:
-    all 0.45s ease;
+    background:
+    rgba(12,12,12,0.18);
 
-    box-shadow:
-    0 10px 40px rgba(0,0,0,0.22);
+    backdrop-filter:blur(12px);
 }
 
-/* SCROLLED */
+/* ON SCROLL */
 
 header.scrolled{
 
     background:
-    rgba(10,10,10,0.62);
+    rgba(10,10,10,0.52);
 
-    backdrop-filter:blur(24px);
+    backdrop-filter:blur(22px);
 
     border:
     1px solid rgba(255,255,255,0.06);
 
     box-shadow:
-    0 20px 60px rgba(0,0,0,0.35);
-}
+    0 12px 40px rgba(0,0,0,0.24);
+                   }
 
 /* LOGO */
 
